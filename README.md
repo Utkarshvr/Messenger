@@ -45,16 +45,16 @@
 
 <div style="display: flex; flex-wrap: wrap;">
   <div>
-    <img src="./screenshots/ss5.png" alt="Screenshot" width="50%">
+    <img src="./screenshots/ss5.png" alt="Screenshot" width="100%">
   </div>
   <div>
-    <img src="./screenshots/ss4.png" alt="Screenshot" width="50%">
+    <img src="./screenshots/ss4.png" alt="Screenshot" width="100%">
   </div>
   <div>
-    <img src="./screenshots/ss1.png" alt="Screenshot" width="50%">
+    <img src="./screenshots/ss1.png" alt="Screenshot" width="100%">
   </div>
   <div>
-    <img src="./screenshots/ss2.png" alt="Screenshot" width="50%">
+    <img src="./screenshots/ss2.png" alt="Screenshot" width="100%">
   </div>
 </div>
 
