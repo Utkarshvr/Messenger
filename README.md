@@ -43,10 +43,10 @@
 
 ## Screenshots
 
-![Screenshot](./screenshots/ss5.png)
-![Screenshot](./screenshots/ss4.png)
-![Screenshot](./screenshots/ss1.png)
-![Screenshot](./screenshots/ss2.png)
+![Screenshot](./screenshots/ss5.png){: width="400px"}
+![Screenshot](./screenshots/ss4.png){: width="400px"}
+![Screenshot](./screenshots/ss1.png){: width="400px"}
+![Screenshot](./screenshots/ss2.png){: width="400px"}
 
 ## Contributing
 
