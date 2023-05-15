@@ -43,17 +43,17 @@
 
 ## Screenshots
 
-<div style="display: flex; justify-content: space-between;">
-  <div style="flex: 1;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div>
     <img src="./screenshots/ss5.png" alt="Screenshot" width="400">
   </div>
-  <div style="flex: 1;">
+  <div>
     <img src="./screenshots/ss4.png" alt="Screenshot" width="400">
   </div>
-  <div style="flex: 1;">
+  <div>
     <img src="./screenshots/ss1.png" alt="Screenshot" width="400">
   </div>
-  <div style="flex: 1;">
+  <div>
     <img src="./screenshots/ss2.png" alt="Screenshot" width="400">
   </div>
 </div>
