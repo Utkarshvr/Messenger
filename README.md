@@ -29,7 +29,7 @@ Welcome to Messenger! This is a simple chat application built using MERN Stack [
 
 5. Start the application:
 
-6. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the chat application.
+6. Open your web browser and visit [https://uv-messenger.netlify.app](https://uv-messenger.netlify.app) to access the chat application.
 
 ## Usage
 
@@ -43,10 +43,9 @@ Welcome to Messenger! This is a simple chat application built using MERN Stack [
 ## Screenshots
 
 ![Screenshot](./screenshots/ss5.png)
-![Screenshot](./screenshots/ss3.png)
+![Screenshot](./screenshots/ss4.png)
 ![Screenshot](./screenshots/ss1.png)
 ![Screenshot](./screenshots/ss2.png)
-![Screenshot](./screenshots/ss4.png)
 
 ## Contributing
 
