@@ -50,7 +50,7 @@ Welcome to Messenger! This is a simple chat application built using MERN Stack [
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to Chat-App, please follow these steps:
+Contributions are welcome! If you'd like to contribute to The App, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -60,16 +60,8 @@ Contributions are welcome! If you'd like to contribute to Chat-App, please follo
 
 Please ensure that your code follows the project's coding guidelines and includes appropriate tests (if applicable).
 
-## License
-
-[Insert license information here, e.g., MIT License]
-
-## Acknowledgments
-
-- [Insert any acknowledgments or credits here]
-
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to [insert contact information]. We'd love to hear from you!
+If you have any questions, suggestions, or feedback, please feel free to reach out to Email: utkarshv955@gmail.com. We'd love to hear from you!
 
 Happy chatting!
