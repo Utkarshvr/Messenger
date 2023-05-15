@@ -43,10 +43,20 @@
 
 ## Screenshots
 
-<img src="./screenshots/ss5.png" alt="Screenshot" width="400">
-<img src="./screenshots/ss4.png" alt="Screenshot" width="400">
-<img src="./screenshots/ss1.png" alt="Screenshot" width="400">
-<img src="./screenshots/ss2.png" alt="Screenshot" width="400">
+<div style="display: flex; justify-content: space-between;">
+  <div style="flex: 1;">
+    <img src="./screenshots/ss5.png" alt="Screenshot" width="400">
+  </div>
+  <div style="flex: 1;">
+    <img src="./screenshots/ss4.png" alt="Screenshot" width="400">
+  </div>
+  <div style="flex: 1;">
+    <img src="./screenshots/ss1.png" alt="Screenshot" width="400">
+  </div>
+  <div style="flex: 1;">
+    <img src="./screenshots/ss2.png" alt="Screenshot" width="400">
+  </div>
+</div>
 
 ## Contributing
 
