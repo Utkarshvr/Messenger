@@ -45,16 +45,16 @@
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
-    <img src="./screenshots/ss5.png" alt="Screenshot" width="400">
+    <img src="./screenshots/ss5.png" alt="Screenshot" width="50%">
   </div>
   <div>
-    <img src="./screenshots/ss4.png" alt="Screenshot" width="400">
+    <img src="./screenshots/ss4.png" alt="Screenshot" width="50%">
   </div>
   <div>
-    <img src="./screenshots/ss1.png" alt="Screenshot" width="400">
+    <img src="./screenshots/ss1.png" alt="Screenshot" width="50%">
   </div>
   <div>
-    <img src="./screenshots/ss2.png" alt="Screenshot" width="400">
+    <img src="./screenshots/ss2.png" alt="Screenshot" width="50%">
   </div>
 </div>
 
