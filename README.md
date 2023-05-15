@@ -43,7 +43,7 @@
 
 ## Screenshots
 
-<div style="display: flex; align-items: center; justify-content: space-between;">
+<div style="display: flex; flex-wrap: wrap;">
   <div>
     <img src="./screenshots/ss5.png" alt="Screenshot" width="50%">
   </div>
