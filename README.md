@@ -43,20 +43,27 @@
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div>
-    <img src="./screenshots/ss5.png" alt="Screenshot" width="100%">
-  </div>
-  <div>
-    <img src="./screenshots/ss4.png" alt="Screenshot" width="100%">
-  </div>
-  <div>
-    <img src="./screenshots/ss1.png" alt="Screenshot" width="100%">
-  </div>
-  <div>
-    <img src="./screenshots/ss2.png" alt="Screenshot" width="100%">
-  </div>
-</div>
+<table>
+  <tr>
+    <td>User Registration</td>
+    <td>Setting Avatar for User Profile</td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/ss5.png" width="100%" ></td>
+    <td><img src="./screenshots/ss4.png" width="100%" ></td>
+  </tr>
+ </table>
+ 
+<table>
+  <tr>
+    <td>Sending Emoji along with text</td>
+    <td>Message Sent</td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/ss1.png" width="100%" ></td>
+    <td><img src="./screenshots/ss2.png" width="100%" ></td>
+  </tr>
+ </table>
 
 ## Contributing
 
