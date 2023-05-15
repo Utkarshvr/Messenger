@@ -1,5 +1,6 @@
 # Messenger
 
+Visit: [https://uv-messenger.netlify.app/](https://uv-messenger.netlify.app/)
 Welcome to Messenger! This is a simple chat application built using MERN Stack [MongoDB, Express, Socket.io, React]. The application allows users to chat with other users, also users can set avatars on their profile which gives them a unique identity. It is designed to provide a seamless and interactive chatting experience for users.
 
 ## Features
@@ -29,7 +30,7 @@ Welcome to Messenger! This is a simple chat application built using MERN Stack [
 
 5. Start the application:
 
-6. Open your web browser and visit [https://uv-messenger.netlify.app](https://uv-messenger.netlify.app) to access the chat application.
+6. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the chat application.
 
 ## Usage
 
