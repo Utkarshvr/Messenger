@@ -11,24 +11,25 @@ import { io } from "socket.io-client";
 export default function Chat() {
   const [contacts, setContacts] = useState([]);
   const [currentChat, setCurrentChat] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
 
-  const { userState } = useContext(UserContext);
+  const { userState, initialCheckComplete } = useContext(UserContext);
   const navigate = useNavigate();
 
   const socket = useRef();
 
   useEffect(() => {
     const func = async () => {
-      if (userState?.isAvatarImageSet) {
-        const { data } = await axios.post(allUsersRoute, {
-          token: localStorage.getItem("chat-app-token"),
-        });
-        if (data.status) {
-          setContacts(data.users);
+      if (initialCheckComplete) {
+        if (userState?.isAvatarImageSet) {
+          const { data } = await axios.post(allUsersRoute, {
+            token: localStorage.getItem("chat-app-token"),
+          });
+          if (data.status) {
+            setContacts(data.users);
+          }
+        } else {
+          navigate("/setavatar");
         }
-      } else {
-        navigate("/setavatar");
       }
     };
     func();
@@ -54,7 +55,7 @@ export default function Chat() {
             contacts={contacts}
             currentUser={userState}
           />
-          {!isLoaded && currentChat === null ? (
+          {currentChat === null ? (
             <Welcome currentUser={userState} />
           ) : (
             <ChatContainer

@@ -34,10 +34,10 @@ export default function Form({ variant, inputs }) {
   const [isLoaded, setIsLoaded] = useState(true);
   const navigate = useNavigate();
 
-  const { isAuthenticated, setIsAuthenticated } = useContext(UserContext);
+  const { isAuthenticated, setIsAuthenticated, setInitialCheckComplete } =
+    useContext(UserContext);
 
   useEffect(() => {
-    console.log(isAuthenticated);
     if (isAuthenticated) {
       navigate("/");
       toast.info("You are already logged in", toastOptions);
@@ -46,10 +46,8 @@ export default function Form({ variant, inputs }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("submitted");
     if (handleValidation()) {
       setIsLoaded(false);
-      console.log("inside validation");
       if (variant === "register") {
         const { password, username, email } = value;
         const { data } = await axios.post(registerRoute, {
@@ -57,7 +55,6 @@ export default function Form({ variant, inputs }) {
           email,
           password,
         });
-        console.log(data);
         if (data.status === false) {
           setIsLoaded(true);
           toast.error(data.msg, toastOptions);
@@ -65,6 +62,7 @@ export default function Form({ variant, inputs }) {
           setIsLoaded(true);
           localStorage.setItem("chat-app-token", data.token);
           setIsAuthenticated(true);
+          setInitialCheckComplete(false);
           navigate("/");
           toast.success("Registered Successfully", toastOptions);
         }
@@ -78,6 +76,7 @@ export default function Form({ variant, inputs }) {
           setIsLoaded(true);
           localStorage.setItem("chat-app-token", data.token);
           setIsAuthenticated(true);
+          setInitialCheckComplete(false);
           navigate("/");
 
           toast.success("Loggedin Successfully", toastOptions);
@@ -140,7 +139,7 @@ export default function Form({ variant, inputs }) {
         <form onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={logo} alt="img" />
-            <h1>snappy</h1>
+            <h1>Messenger</h1>
           </div>
           {inputs.map(({ type, name, placeholder }, i) => (
             <input

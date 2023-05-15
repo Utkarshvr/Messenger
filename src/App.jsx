@@ -23,16 +23,13 @@ export default function App() {
     setInitialCheckComplete,
   } = useContext(UserContext);
   const navigate = useNavigate();
-  console.log(userState, isAuthenticated);
   useEffect(() => {
     async function authenticateUser() {
       const URLpathName = window.location.pathname;
-      console.log(URLpathName);
       // Getting Token from Local Storage
       const token = localStorage.getItem("chat-app-token");
       if (token) {
         const data = await setUser(setUserState);
-        console.log(data);
         if (!data.status) {
           setInitialCheckComplete(true);
           navigate(URLpathName === "/register" ? "/register" : "/login");

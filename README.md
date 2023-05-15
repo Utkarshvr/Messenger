@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Messenger
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Messenger! This is a simple chat application built using MERN Stack [MongoDB, Express, Socket.io, React]. The application allows users to chat with other users, also users can set avatars on their profile which gives them a unique identity. It is designed to provide a seamless and interactive chatting experience for users.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User registration and authentication
+- Avatar on user profile
+- User profile customization
+- Real-time messaging
+- Emojis attachments
+- Message notifications
+- Privacy and security features
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React, Node.js, Socket.io, MongoDB
+- react-toastify, emoji-picker-react, styled-components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+3. Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Configure the application by updating the necessary environment variables (if applicable).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Start the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the chat application.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Register a new account or log in with existing credentials.
+- Explore the chat interface.
+- Send messages to other users.
+- Customize your profile settings.
+- Add Avatar on your profile.
+- Enjoy seamless and interactive conversations!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot](./screenshots/ss1.png)
+![Screenshot](./screenshots/ss2.png)
+![Screenshot](./screenshots/ss3.png)
+![Screenshot](./screenshots/ss4.png)
+![Screenshot](./screenshots/ss5.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions are welcome! If you'd like to contribute to Chat-App, please follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make the necessary changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please ensure that your code follows the project's coding guidelines and includes appropriate tests (if applicable).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Insert license information here, e.g., MIT License]
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Insert any acknowledgments or credits here]
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any questions, suggestions, or feedback, please feel free to reach out to [insert contact information]. We'd love to hear from you!
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy chatting!

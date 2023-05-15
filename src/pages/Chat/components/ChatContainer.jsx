@@ -32,8 +32,6 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
       message: msg,
     });
 
-    console.log(data);
-
     if (!data.status) {
       return toast.error("An Error Occur While Sending Message", toastOptions);
     }
@@ -62,14 +60,12 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
   }, [messages]);
 
   useEffect(() => {
-    console.log("Chat Changed");
     const fetchAllMsgs = async () => {
       const { data } = await axios.post(getAllMessagesRoute, {
         token: localStorage.getItem("chat-app-token"),
         from: currentUser._id,
         to: currentChat._id,
       });
-      console.log(data);
       if (!data.status) {
         return toast.error(
           "An Error Occur While Fetching Message",
@@ -130,16 +126,17 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    height: "100%";
+    height: 100%;
     .user-details {
       display: flex;
       align-items: center;
       gap: 1rem;
-      height: "100%";
+      height: 100%;
       .avatar {
+        height: 100%;
         img {
           max-height: 3rem;
-          height: "100%";
+          height: 100%;
         }
       }
       .username {

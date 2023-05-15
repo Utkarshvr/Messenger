@@ -27,22 +27,25 @@ export default function SetAvatar() {
 
   const navigate = useNavigate();
 
-  const { isAuthenticated, userState, initialCheckComplete } =
-    useContext(UserContext);
+  const {
+    isAuthenticated,
+    userState,
+    initialCheckComplete,
+    setInitialCheckComplete,
+  } = useContext(UserContext);
 
   const setProfilePicture = async () => {
     if (selectedAvatar === null || undefined) {
       return toast.error("Please select an avatar", toastOptions);
     } else {
-      console.log(avatars[selectedAvatar]);
       const { data } = await axios.post(setAvatarRoute, {
         token,
         image: avatars[selectedAvatar],
       });
-      console.log(data);
       if (data.status) {
         localStorage.setItem("chat-app-token", data.token);
         // SOmething
+        setInitialCheckComplete(false);
         navigate("/");
         toast.success("Avatar Set Successfully", toastOptions);
       } else {
@@ -55,11 +58,6 @@ export default function SetAvatar() {
   };
 
   useEffect(() => {
-    console.log({
-      initialCheckComplete,
-      token,
-      isAvatarImageSet: userState?.isAvatarImageSet,
-    });
     if (initialCheckComplete) {
       if (!isAuthenticated || !token) {
         navigate("/");

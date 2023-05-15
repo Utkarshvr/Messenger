@@ -4,36 +4,6 @@ import { IoMdSend } from "react-icons/io";
 import styled from "styled-components";
 import Picker from "emoji-picker-react";
 
-const MYINPUT = (
-  //   selectedEmoji,
-  //   emojiPickerClicked,
-  handleSendMsg,
-  sendChatOrder
-) => {
-  const [msg, setMsg] = useState("");
-  const sendChat = () => {
-    if (msg.length > 0) {
-      handleSendMsg(msg);
-      setMsg("");
-    }
-  };
-
-  //   if (emojiPickerClicked) {
-  //     console.log(selectedEmoji);
-  //     setMsg((msg) => msg + selectedEmoji);
-  //   }
-
-  if (sendChatOrder) sendChat();
-  return (
-    <input
-      type="text"
-      placeholder="type your message here"
-      onChange={(e) => setMsg(e.target.value)}
-      value={msg}
-    />
-  );
-};
-
 export default function ChatInput({ handleSendMsg }) {
   const [msg, setMsg] = useState("");
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
